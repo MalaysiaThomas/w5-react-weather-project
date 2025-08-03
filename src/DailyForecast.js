@@ -3,15 +3,16 @@ import './DailyForecast.css';
 import axios from 'axios';
 
 
-export default function DailyForecast() {
+export default function DailyForecast(props) {
+  console.log(props)
     function handleResponse(response) {
-       console.log(response.data);
+       console.log(lat);
+       console.log(lon)
      }
 
     const apiKey = "0dc40d3d7cda209ca40e77430c74cf57";
-    let lat = 40.7128; // Example latitude for New York
-    let lon = -74.0060; // Example longitude for New York
-    // Replace with actual latitude and longitude from weatherData if available
+    let lat = props.coordinates.lat; 
+    let lon = props.coordinates.lon; 
     let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
    
 

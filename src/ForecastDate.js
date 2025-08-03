@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function ForecastDate(props) {
+export default function ForecastDate(props) {    
     return (
         <div className="DailyForecast">
             <div className="DailyForecast-day">{props.data.time}</div>
 
             <div className="DailyForecast-icon">
-                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny" />
+                <img src={props.data.condition.icon_url} alt={props.data.condition.icon} />
             </div>
 
             <div className="DailyForecast-temperatures">

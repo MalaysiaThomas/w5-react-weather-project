@@ -10,7 +10,10 @@ export default function DailyForecast() {
             <div className="DailyForecast-day">Mon</div>
 
             <div className="DailyForecast-icon">
-              <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny" />
+              <img
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                alt="Sunny"
+              />
             </div>
 
             <div className="DaiyForecast-temperatures">
@@ -18,6 +21,7 @@ export default function DailyForecast() {
               <span className="DailyForecast-temperature-min">55°</span>
             </div>
           </div>
+          
         </div>
       </div>
     );

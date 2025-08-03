@@ -10,15 +10,15 @@ export default function Weather(props) {
     function handleResponse(response) {
         console.log(response.data.timezone);
         setWeatherData({
-            loaded: true,
-            date: new Date(response.data.dt * 1000),
-            iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
-            temperature: Math.round(response.data.main.temp),
-            feelsLike: Math.round(response.data.main.feels_like),
-            description: response.data.weather[0].description,
-            humidity: response.data.main.humidity,
-            wind: Math.round(response.data.wind.speed),
-            city: response.data.name
+          loaded: true,
+          date: new Date(response.data.dt * 1000),
+          iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+          temperature: Math.round(response.data.main.temp),
+          feelsLike: Math.round(response.data.main.feels_like),
+          description: response.data.weather[0].description,
+          humidity: response.data.main.humidity,
+          wind: Math.round(response.data.wind.speed),
+          city: response.data.name,
         });
     }
 

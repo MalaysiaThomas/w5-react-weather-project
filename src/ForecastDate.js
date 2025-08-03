@@ -1,9 +1,17 @@
 import React from "react";
 
-export default function ForecastDate(props) {    
+export default function ForecastDate(props) { 
+    console.log(props.data.time) 
+    function day() {
+        let days = ["Sun", "Mon", "Tues", "Wed", "Thu","Fri", "Sat"]
+        let date = new Date(props.data.time * 1000)
+        let day = date.getDay()
+        return days[day]
+    }
+    
     return (
         <div className="DailyForecast">
-            <div className="DailyForecast-day">{props.data.time}</div>
+            <div className="DailyForecast-day">{day()}</div>
 
             <div className="DailyForecast-icon">
                 <img src={props.data.condition.icon_url} alt={props.data.condition.icon} />

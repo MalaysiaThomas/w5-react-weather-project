@@ -1,0 +1,15 @@
+.Footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+.Footer a {
+    color: rgb(103, 102, 102);
+    text-decoration: none;
+    transition: 200ms all ease-in-out;
+}
+
+.Footer a:hover {
+    color: black;
+    text-decoration: underline;
+}

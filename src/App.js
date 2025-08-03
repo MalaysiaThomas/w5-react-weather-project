@@ -1,11 +1,17 @@
+import React from "react";
 import './App.css';
+import Footer from './Footer';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>APP.JS PAGE</h1>
+      <div className="container">
+       
+
+        <Footer />
+      </div>
     </div>
   );
 }
 
-export default App;
+

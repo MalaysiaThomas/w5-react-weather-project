@@ -1,0 +1,29 @@
+.DailyForecast {
+    text-align: center;
+}
+
+.col {
+    border: 1px solid #e0e0e0;
+    margin: 3px;
+    border-radius: 5px;
+    background-color: rgba(248, 246, 242, 0.488);
+}
+
+.DailyForecast-day {
+    color: rgb(49, 49, 49);
+}
+
+.DailyForecast-temperature-max {
+    color: rgb(49, 49, 49);
+
+}
+
+.DailyForecast-temperature-min {
+    opacity: 0.6;
+    margin-left: 5px;
+}
+
+.DailyForecast-icon img {
+   width: 40px;
+   height: 40px;
+}

@@ -28,7 +28,7 @@ export default function DailyForecast(props) {
         let apiKey = "34a0b3608792f91t1oc6463e450b7ab0";
         let lat = props.coordinates.lat; 
         let lon = props.coordinates.lon; 
-        let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}`
+        let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}&units=imperial`
         
 
         axios.get(apiUrl).then(handleResponse)

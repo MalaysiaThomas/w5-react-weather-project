@@ -20,14 +20,16 @@ export default function DailyForecast(props) {
     console.log(forecast)
     return (
       <div className="DailyForecast">
-        <div className="row">
+        <div className="row mt-3">
           {forecast.map(function (dailyForecast, index) {
             if (index > 0 && index < 6) {
               return (
-                <div className="col" key={index} >
+                <div className="col py-2" key={index} >
                   <ForecastDate data={dailyForecast}/>
                 </div>
               )
+            } else {
+              return null
             }
           })}
         </div>
